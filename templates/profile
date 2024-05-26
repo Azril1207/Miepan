@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+
+    <style>
+        body {
+          font-family: sans-serif;
+        }
+        
+        .container {
+          width: 400px;
+          margin: 0 auto;
+          border: 1px solid #ccc;
+          padding: 20px;
+          border-radius: 5px;
+        }
+        
+        .profile-picture {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin: 0 auto;
+          background-color: #eee;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .profile-picture::before {
+          content: '';
+          display: block;
+          width: 50px;
+          height: 50px;
+          background-color: #ccc;
+          border-radius: 50%;
+        }
+        
+        .profile-picture::after {
+          content: '';
+          display: block;
+          width: 10px;
+          height: 10px;
+          background-color: #666;
+          border-radius: 50%;
+          position: absolute;
+          top: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        
+        .input-field {
+          margin-top: 10px;
+        }
+        
+        .input-field label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+        
+        .input-field input {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+        }
+        
+        .buttons {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-around;
+        }
+        
+        .button {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+        
+        .button:hover {
+          background-color: #45a049;
+        }
+        
+        .button-cancel {
+          padding: 10px 20px;
+          background-color: #f44336;
+          color: white;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+        
+        .button-cancel:hover {
+          background-color: #d32f2f;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Profile</h1>
+      <div class="profile-picture"></div>
+      <div class="input-field">
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" placeholder="Nama Anda" />
+      </div>
+      <div class="input-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email Anda" />
+      </div>
+      <div class="input-field">
+        <label for="phone">No telepon</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="No Telepon Anda"
+        />
+      </div>
+      <div class="input-field">
+        <label for="alamat">Alamat</label>
+        <input
+          type="text"
+          id="alamat"
+          name="alamat"
+          placeholder="Alamat Anda"
+        />
+      </div>
+      <div class="buttons">
+        <button class="button">edit</button>
+        <button class="button-cancel">keluar</button>
+      </div>
+    </div>
+  </body>
+</html>
