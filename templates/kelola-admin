@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .admin-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .admin-list li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .admin-list li:last-child {
+      border-bottom: none;
+    }
+
+    .admin-form {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .admin-form input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    .admin-form button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h1>Logo</h1>
+      <ul class="admin-list">
+        <li>Dashboard</li>
+        <li>Kelola Menu</li>
+        <li>Kelola Pesanan</li>
+        <li>Kelola Admin</li>
+        <li>Kelola Rekening</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Kelola Admin</h1>
+      <div class="admin-form">
+        <input type="text" placeholder="Nama Admin">
+        <input type="text" placeholder="Username/Email">
+        <button>Tambah Admin</button>
+      </div>
+      <div class="admin-form">
+        <input type="text" placeholder="Nama Admin">
+        <input type="text" placeholder="Username/Email">
+        <button>Tambah Admin</button>
+      </div>
+      <button class="akun-admin">Akun Admin</button>
+    </div>
+  </div>
+</body>
+</html>
