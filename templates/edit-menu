@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .input-group {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .image-container {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Edit Menu</h2>
+    <div class="image-container">
+      <img src="logo-miepan.png" alt="">
+    </div>
+    <div class="input-group">
+      <label for="price">Price Menu</label>
+      <input type="number" id="price" name="price" placeholder="harga">
+    </div>
+    <div class="input-group">
+      <label for="category">Category</label>
+      <input type="text" id="category" name="category" placeholder="Kategori">
+    </div>
+    <div class="input-group">
+      <label for="name">Menu Name</label>
+      <input type="text" id="name" name="name" placeholder="Nama Menu">
+    </div>
+    <div class="input-group">
+      <label for="description">Menu Description</label>
+      <textarea id="description" name="description" placeholder="Deskripsi Menu"></textarea>
+    </div>
+    <div class="input-group">
+      <button type="submit">Save</button>
+      <button type="reset">Cancel</button>
+    </div>
+  </div>
+</body>
+</html>
