@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tembeh Admin</title>
+<style>
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 49%;
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.cancelbtn {
+  background-color: #f44336;
+}
+
+.container span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Tambah Admin</h1>
+  <form>
+    <label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Masukkan Email Anda" name="uname" required>
+
+    <label for="psw"><b>Nama</b></label>
+    <input type="text" placeholder="Masukkan Nama Anda" name="psw" required>
+
+    <label for="psw"><b>Akses</b></label>
+    <input type="text" placeholder="Masukkan Password Anda" name="psw" required>
+
+    <label for="psw"><b>Telepon</b></label>
+    <input type="text" placeholder="Masukkan Nomor Telepon Anda" name="psw" required>
+
+    <button type="submit">Login</button>
+    <button type="button" class="cancelbtn">Cancel</button>
+  </form>
+</div>
+
+</body>
+</html>
